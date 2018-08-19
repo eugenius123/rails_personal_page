@@ -1,24 +1,10 @@
-<nav class="navbar sticky-top navbar-dark navbar-expand-sm">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-    <div class="navbar-nav mr-auto " data-toggle="collapse" data-target=".navbar-collapse.show">
-      <a class="nav-item nav-link " href="#home">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#about">About</a>
-      <a class="nav-item nav-link" href="#summary">Summary</a>
-      <a class="nav-item nav-link" href="#">Portfolio</a>
-      <a class="nav-item nav-link" href="#">Resume</a>
-    </div>
-  </div>
-</nav>
 
 <div class="front-page" id="home">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3">
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right hello-text">
+      <div class="col-xs-10 col-sm-10 col-md-8 col-lg-6 text-center hello-text">
         <div class="front-page-content1">
           <span class="title">Hi, <span class="im">I'm</span> <span >Eugene Yu</span></span><br>
         </div>
@@ -29,7 +15,7 @@
         <br/>
         <div class="front-page-content3">
           <a href="#about">
-            <div class="white-button">
+            <div class="white-button center-block">
               READ MORE
             </div>
           </a>
@@ -56,8 +42,10 @@
 <div class = "about-me">
   <div class="container">
     <div class="row">
-      <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3"></div>
-      <div class="col-xs-10 col-sm-10 col-md-8 col-lg-6 ">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <%= image_tag("profile-pic.jpg", :class => 'center', :size => '340x525') %>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
         After graduating with a degree in Mechanical Engineering from Carnegie Mellon University,
         I worked as an assistant product manager at a BEA sensors for a year. I helped manage a few door sensor products but
         I never felt fulfilled in my work.
@@ -72,7 +60,6 @@
         myself how to play guitar by ear, and am a self-taught piano player by ear as well. Outside of coding, I like
         spending time with the love of my life Rachel and like to work out at the gym.
       </div>
-      <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3"></div>
     </div>
 
   </div>
@@ -91,7 +78,7 @@
           <br><strong>Rice University</strong>
           <br>Bachelor of Science Bioengineering and Business minor
           <br>
-          <br>2016 - 2018
+          <br>2016 - 2017
           <br><strong>Carnegie Mellon University</strong>
           <br>Master of Science Mechanical Engineering
         </div>
@@ -134,6 +121,17 @@
     </div>
   </div>
 </div>
+
+<div class="portfolio-strip text-center" id="projects">
+  <div class="container reveal">
+    Projects
+    <div class="line"></div>
+  </div>
+</div>
+
+
+
+
 
 
 
