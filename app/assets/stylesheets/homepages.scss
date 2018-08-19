@@ -12,7 +12,7 @@
 // navbar styling
 .navbar {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   -webkit-transition: background-color 2s ease-in;
   -moz-transition: background-color 2s ease-in;
   -ms-transition: background-color 2s ease-in;
@@ -48,7 +48,7 @@
 .front-page {
   height:99vh;
   width: 100%;
-  background: image-url('profile-pic.jpg') no-repeat left center scroll;
+  background: image-url('profile-pic.jpg') no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
