@@ -1,3 +1,180 @@
 // Place all the styles related to the homepages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// landing page styling
+
+// landing page styling
+.clear {
+  margin-top: 40px;
+}
+
+// navbar styling
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: background-color 2s ease-in;
+  -moz-transition: background-color 2s ease-in;
+  -ms-transition: background-color 2s ease-in;
+  -o-transition: background-color 2s ease-in;
+  transition: background-color 2s ease-in;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+  color: white;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  //background: image_url('navback.jpg');
+  a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: border-bottom 0.75s;
+    transition: border-bottom 0.75s;
+    &:hover {
+      border-bottom: 1px solid #3FAEFD;
+    }
+  }
+}
+
+.nav-item {
+  color: black;
+}
+.navbar-nav{
+  font-size: 20px;
+}
+
+
+// landing page styling
+.front-page {
+  height:99vh;
+  width: 100%;
+  background: image-url('profile-pic.jpg') no-repeat left center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  .title {
+    font-size: 80px;
+    font-weight:200;
+
+  }
+  .summary {
+    font-size: 30px;
+    font-weight:200;
+  }
+
+  .white-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 60px;
+    width: 140px;
+    border: 4px solid white;
+    float:right;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-transition: background-color 0.75s, color 0.75s;
+    transition: background-color 0.75s, color 0.75s;
+    &:hover {
+      background-color: white;
+      color: grey;
+    }
+  }
+
+
+
+  a {
+    color: white;
+  }
+}
+
+.hello-text {
+  padding-top: 3.5em;
+}
+
+.about-me-strip {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background: #2e3338;
+  color: white;
+  .title {
+    font-size: 70px;
+    font-weight:200;
+    color: #ffffff;
+  }
+  .sub-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight:200;
+    color: #ffffff;
+  }
+}
+
+.about-me {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+// styling for education, experience and skills
+.education-experience-skills {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #2e3338;
+  font-weight:200;
+  .line {
+    margin:0 auto;
+    width: 75px;
+    border-bottom: 1px solid #C0C0C0;
+    margin-bottom: 10px;
+  }
+  strong {
+    font-weight: 400;
+  }
+  .skill-icons{
+    i {
+      font-size: 55px;
+      margin: 3px;
+      line-height: 1.3;
+    }
+  }
+  .box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    // background: white;
+    // color: black;
+    background: transparent;
+    color: white;
+
+    padding: 5px 15px 15px 15px;
+    height: 100%;
+    // -moz-box-shadow: 0 0 10px #C0C0C0;
+    // -webkit-box-shadow: 0 0 10px #C0C0C0;
+    // box-shadow: 0 0 10px #C0C0C0;
+    -webkit-transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+    transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+    &:hover {
+      -moz-box-shadow: 0 0 10px grey;
+      -webkit-box-shadow: 0 0 10px grey;
+      box-shadow: 0 0 10px grey;
+
+      background: rgba(130, 128, 124, 0.49);
+      color: black;
+    }
+    img {
+      height: 30px;
+    }
+  }
+}

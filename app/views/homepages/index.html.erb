@@ -1,16 +1,157 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-inverse sticky-top navbar-expand-sm">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">About</a>
+      <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#about">About</a>
+      <a class="nav-item nav-link" href="#summary">Summary</a>
       <a class="nav-item nav-link" href="#">Portfolio</a>
       <a class="nav-item nav-link" href="#">Resume</a>
     </div>
   </div>
 </nav>
 
-<h1>initial page made</h1>
+<div class="front-page" id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right hello-text">
+        <div class="front-page-content1">
+          <span class="title">Hi, <span class="im">I'm</span> <span >Eugene Yu</span></span><br>
+        </div>
+        <div class="front-page-content2">
+          <span class="summary quotes">Full-stack web developer</span>
+<!--          <span class="summary quotes">A back-end web developer</span><span class="summary quotes">A software developer</span><br><br>-->
+        </div>
+        <br/>
+        <div class="front-page-content3">
+          <a href="#about">
+            <div class="white-button">
+              READ MORE
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--about me strip-->
+<div class="about-me-strip" id="about">
+  <div class="container reveal">
+    <div class="title text-center">
+      Welcome to my personal webpage!
+    </div>
+    <div class="sub-title text-center">
+      Here's a little background about myself.
+    </div>
+  </div>
+
+</div>
+<div class = "clear"></div>
+<!--the blurb about me-->
+<div class = "about-me">
+  <div class="container">
+    <div class="row">
+      <div class="col-3 col-sm-1 col-xs-0"></div>
+      <div class="col-6 col-sm-10 col-xs-12">
+        After graduating with a degree in Mechanical Engineering from Carnegie Mellon University,
+        I worked as an assistant product manager at a BEA sensors for a year. I helped manage a few door sensor products but
+        I never felt fulfilled in my work.
+        <br/><br/>
+        This was when I started thinking back to my Carnegie Mellon days where
+        I did really well in an advanced level C++ course and was then asked to be the TA for the next semester. I remembered how
+        engaging, challenging, and satisfying coding was and regretted not choosing software as my career path! During my last
+        three months at work, I self studied HTML/CSS/JS for web development and data structures/algorithms in python. I quit
+        my job so that I could study and prepare myself to enter into software development full-time.
+        <br/><br/>
+        I am proud of myself for being a 100% self-taught aspiring software engineer. I have also self-taught
+        myself how to play guitar by ear, and am a self-taught piano player by ear as well. Outside of coding, I like
+        spending time with the love of my life Rachel and like to work out at the gym.
+      </div>
+      <div class="col-3 col-sm-1 col-xs-0"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="clear"></div>
+<div class="education-experience-skills" id="summary">
+  <div class="container">
+    <div class="row is-flex">
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+        <div class="box">
+          <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</h4>
+          <div class="line"></div>
+          2010 - 2014
+          <br><strong>Rice University</strong>
+          <br>Bachelor of Science Bioengineering and Business minor
+          <br>
+          <br>2016 - 2018
+          <br><strong>Carnegie Mellon University</strong>
+          <br>Master of Science Mechanical Engineering
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+        <div class="box">
+          <h4><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Experience</h4>
+          <div class="line"></div>
+          2017 - 2018
+          <br><strong>BEA Sensors Americas</strong>
+          <br><span class="">Assistant Product Manager</span>
+          <br>
+          <br>
+          <br> 2018
+          <br><strong>Oak Atlantic</strong>
+          <br><span class="">Junior Ruby on Rails Developer</span>
+          <br>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center">
+        <div class="box">
+          <h4><i class="fa fa-wrench" aria-hidden="true"></i>&nbsp;Skills</h4>
+          <div class="line"></div>
+          <h1>
+            <div class="skill-icons">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored"></i><br>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-ruby-plain-wordmark colored"></i>
+              <i class="devicon-rails-plain-wordmark colored"></i><br>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-jquery-plain-wordmark colored"></i>
+              <i class="devicon-python-plain colored"></i><br/>
+            </div>
+          </h1>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Smooth scrolling -->
+<script type="text/javascript">
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 800);
+                return false;
+            }
+        }
+    });
+
+</script>
+
+
