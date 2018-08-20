@@ -67,4 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # bootstrap and jquery added popper as well
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.14.3'
-gem 'bootstrap', '~>4.1.2'
+gem 'bootstrap', '~>4.1.3'
