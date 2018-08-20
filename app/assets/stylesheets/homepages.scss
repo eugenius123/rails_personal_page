@@ -211,8 +211,8 @@
 }
 
 .portfolio {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   img {
     height: 300px;
@@ -269,7 +269,6 @@
     align-items: center;
     justify-content: center;
     height: 250px;
-    font-family: 'Fira Sans', sans-serif;
     .title {
       font-size: 25px;
     }
@@ -299,6 +298,7 @@
 
 .contact-me {
   padding-top: 20px;
+  padding-bottom: 10px;
 background-color: #2e3338;
   color: white;
   i, a {
