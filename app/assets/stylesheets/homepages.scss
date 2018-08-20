@@ -24,7 +24,7 @@
   z-index: 1000;
   color: white;
   box-shadow: 0px 1px 3px #2a2a2a;
-  //background: image_url('navback.jpg');
+
   a {
     color: white;
     text-decoration: none;
@@ -50,11 +50,18 @@
   height:99vh;
   width: 100%;
   background: image-url('background.jpg') no-repeat center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+  //background-size: cover;
+  //position: relative;
 
   align-items: center;
   justify-content: center;
@@ -155,16 +162,14 @@
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
-    // background: white;
-    // color: black;
     background: transparent;
     color: white;
 
     padding: 5px 15px 15px 15px;
     height: 100%;
-    // -moz-box-shadow: 0 0 10px #C0C0C0;
-    // -webkit-box-shadow: 0 0 10px #C0C0C0;
-    // box-shadow: 0 0 10px #C0C0C0;
+     -moz-box-shadow: 0 0 10px #C0C0C0;
+     -webkit-box-shadow: 0 0 10px #C0C0C0;
+     box-shadow: 0 0 10px #C0C0C0;
     -webkit-transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     transition: box-shadow 0.5s, background 0.5s, color 0.5s;
     &:hover {
