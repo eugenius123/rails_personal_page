@@ -211,3 +211,90 @@
   }
 
 }
+
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  img {
+    height: 300px;
+    border: 0px;
+  }
+  .hidden {
+    height: 1px;
+  }
+
+  .grid {
+    color: transparent;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    .line {
+      margin:0 auto;
+      width: 130px;
+      border-bottom: 1px solid transparent;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      -webkit-transition: border-color 0.5s;
+      transition: border-color 0.5s;
+    }
+    &:before {
+      background-image: linear-gradient(0deg,rgba(255,255,255,0.95),rgba(255,255,255,0.95));
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: -100;
+      -webkit-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
+      color: black;
+      .line {
+        border-bottom: 1px solid #FEDC37;
+      }
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  .portfolio-contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    font-family: 'Fira Sans', sans-serif;
+    .title {
+      font-size: 25px;
+    }
+    .summary {
+      font-size: 13px;
+    }
+  }
+  #portfolio-1 {
+    background-image: image-url("webdev.png");
+  }
+  #portfolio-2 {
+    background-image: image-url("flixster.png");
+  }
+  #portfolio-3 {
+    background-image: image-url("nomster.png");
+  }
+  #portfolio-4 {
+    background-image: image-url("todoster.png");
+  }
+  #portfolio-5 {
+    background-image: image-url("muscle.png");
+  }
+  #portfolio-6 {
+    background-image: image-url("grammable.png");
+  }
+}
